@@ -1,9 +1,8 @@
 import Creyente from "../models/Creyente.js";
 
 const getCreyente = async (req, res)=>{
-    res.status(403).json({
-        message: "creyente :)"
-    })
+   const creyentes = await Creyente.find();
+   res.json(creyentes);
 }
 
 const postCreyente = async(req, res)=>{

@@ -21,7 +21,7 @@ const creyenteSchema = Schema({
     enum: ["Bucaramanga", "piedecuesta", "FloridaBlanca", "Giron"],
     trim: true,
   },
-  Comuna: {
+ /*  Comuna: {
     type: String,
     require :true,
     trim: true, 
@@ -30,7 +30,7 @@ const creyenteSchema = Schema({
     type: String,
     require :true,
     trim: true, 
-  },
+  }, */
   ministerio: {
     type: String,
     enum: ["Adoracion", "Mujeres", "jovenes", "Hombres"],
